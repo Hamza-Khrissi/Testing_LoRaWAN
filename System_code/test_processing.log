@@ -1,0 +1,1116 @@
+2025-07-31 14:50:18,044 - INFO - MainController initialisé - SF:9, BW:250kHz, CR:4/5
+2025-07-31 14:50:18,046 - INFO - 🚀 DÉBUT DU PROCESSUS COMPLET
+2025-07-31 14:50:18,046 - INFO - Chargement des EPCs depuis EPCS.xlsx
+2025-07-31 14:50:18,054 - ERROR - ❌ Erreur lors du chargement des EPCs: Excel file format cannot be determined, you must specify an engine manually.
+2025-07-31 14:50:18,054 - ERROR - 💥 ÉCHEC DU PROCESSUS: Excel file format cannot be determined, you must specify an engine manually.
+2025-07-31 14:50:18,073 - ERROR - Détails de l'erreur:
+Traceback (most recent call last):
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\MainController.py", line 307, in run_complete_process
+    self.load_input_epcs(input_file)
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\MainController.py", line 82, in load_input_epcs
+    self.original_epcs = self.epc_analyzer.load_epcs(file_path)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\EPC_OPT.py", line 28, in load_epcs
+    df = pd.read_excel(path, header=None)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_base.py", line 495, in read_excel
+    io = ExcelFile(
+         ^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_base.py", line 1554, in __init__
+    raise ValueError(
+ValueError: Excel file format cannot be determined, you must specify an engine manually.
+
+2025-07-31 15:01:08,815 - INFO - MainController initialisé - SF:8, BW:500kHz, CR:4/5
+2025-07-31 15:01:08,826 - INFO - 🚀 DÉBUT DU PROCESSUS COMPLET
+2025-07-31 15:01:08,826 - INFO - Chargement des EPCs depuis EPCS.xlsx
+2025-07-31 15:01:08,833 - ERROR - ❌ Erreur lors du chargement des EPCs: Excel file format cannot be determined, you must specify an engine manually.
+2025-07-31 15:01:08,833 - ERROR - 💥 ÉCHEC DU PROCESSUS: Excel file format cannot be determined, you must specify an engine manually.
+2025-07-31 15:01:08,835 - ERROR - Détails de l'erreur:
+Traceback (most recent call last):
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\MainController.py", line 307, in run_complete_process
+    self.load_input_epcs(input_file)
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\MainController.py", line 82, in load_input_epcs
+    self.original_epcs = self.epc_analyzer.load_epcs(file_path)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\EPC_OPT.py", line 28, in load_epcs
+    df = pd.read_excel(path, header=None)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_base.py", line 495, in read_excel
+    io = ExcelFile(
+         ^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_base.py", line 1554, in __init__
+    raise ValueError(
+ValueError: Excel file format cannot be determined, you must specify an engine manually.
+
+2025-07-31 15:02:14,912 - INFO - MainController initialisé - SF:10, BW:125kHz, CR:4/5
+2025-07-31 15:02:14,913 - INFO - 🚀 DÉBUT DU PROCESSUS COMPLET
+2025-07-31 15:02:14,913 - INFO - Chargement des EPCs depuis EPCS.xlsx
+2025-07-31 15:02:15,079 - ERROR - ❌ Erreur lors du chargement des EPCs: File is not a zip file
+2025-07-31 15:02:15,079 - ERROR - 💥 ÉCHEC DU PROCESSUS: File is not a zip file
+2025-07-31 15:02:15,139 - ERROR - Détails de l'erreur:
+Traceback (most recent call last):
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\MainController.py", line 307, in run_complete_process
+    self.load_input_epcs(input_file)
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\MainController.py", line 82, in load_input_epcs
+    self.original_epcs = self.epc_analyzer.load_epcs(file_path)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\EPC_OPT.py", line 28, in load_epcs
+    df = pd.read_excel(path, header=None, engine='openpyxl')
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_base.py", line 495, in read_excel
+    io = ExcelFile(
+         ^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_base.py", line 1567, in __init__
+    self._reader = self._engines[engine](
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_openpyxl.py", line 553, in __init__
+    super().__init__(
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_base.py", line 573, in __init__
+    self.book = self.load_workbook(self.handles.handle, engine_kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_openpyxl.py", line 572, in load_workbook
+    return load_workbook(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\reader\excel.py", line 346, in load_workbook
+    reader = ExcelReader(filename, read_only, keep_vba,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\reader\excel.py", line 123, in __init__
+    self.archive = _validate_archive(fn)
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\reader\excel.py", line 95, in _validate_archive
+    archive = ZipFile(filename, 'r')
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\zipfile\__init__.py", line 1354, in __init__
+    self._RealGetContents()
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\zipfile\__init__.py", line 1421, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+
+2025-07-31 15:32:05,125 - INFO - MainController initialisé - SF:12, BW:500kHz, CR:4/5
+2025-07-31 15:32:05,125 - INFO - 🚀 DÉBUT DU PROCESSUS COMPLET
+2025-07-31 15:32:05,125 - INFO - Chargement des EPCs depuis EPCS.xlsx
+2025-07-31 15:32:05,306 - ERROR - ❌ Erreur lors du chargement des EPCs: File is not a zip file
+2025-07-31 15:32:05,306 - ERROR - 💥 ÉCHEC DU PROCESSUS: File is not a zip file
+2025-07-31 15:32:05,315 - ERROR - Détails de l'erreur:
+Traceback (most recent call last):
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\MainController.py", line 307, in run_complete_process
+    self.load_input_epcs(input_file)
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\MainController.py", line 82, in load_input_epcs
+    self.original_epcs = self.epc_analyzer.load_epcs(file_path)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\EPC_OPT.py", line 28, in load_epcs
+    df = pd.read_excel(path, header=None, engine='openpyxl')
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_base.py", line 495, in read_excel
+    io = ExcelFile(
+         ^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_base.py", line 1567, in __init__
+    self._reader = self._engines[engine](
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_openpyxl.py", line 553, in __init__
+    super().__init__(
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_base.py", line 573, in __init__
+    self.book = self.load_workbook(self.handles.handle, engine_kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_openpyxl.py", line 572, in load_workbook
+    return load_workbook(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\reader\excel.py", line 346, in load_workbook
+    reader = ExcelReader(filename, read_only, keep_vba,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\reader\excel.py", line 123, in __init__
+    self.archive = _validate_archive(fn)
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\reader\excel.py", line 95, in _validate_archive
+    archive = ZipFile(filename, 'r')
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\zipfile\__init__.py", line 1354, in __init__
+    self._RealGetContents()
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\zipfile\__init__.py", line 1421, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+
+2025-07-31 15:33:24,631 - INFO - MainController initialisé - SF:12, BW:500kHz, CR:4/5
+2025-07-31 15:33:24,633 - INFO - 🚀 DÉBUT DU PROCESSUS COMPLET
+2025-07-31 15:33:24,633 - INFO - Chargement des EPCs depuis EPCS.xlsx
+2025-07-31 15:33:24,790 - ERROR - ❌ Erreur lors du chargement des EPCs: File is not a zip file
+2025-07-31 15:33:24,790 - ERROR - 💥 ÉCHEC DU PROCESSUS: File is not a zip file
+2025-07-31 15:33:24,793 - ERROR - Détails de l'erreur:
+Traceback (most recent call last):
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\MainController.py", line 307, in run_complete_process
+    self.load_input_epcs(input_file)
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\MainController.py", line 82, in load_input_epcs
+    self.original_epcs = self.epc_analyzer.load_epcs(file_path)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\EPC_OPT.py", line 28, in load_epcs
+    df = pd.read_excel(path, header=None, engine='openpyxl')
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_base.py", line 495, in read_excel
+    io = ExcelFile(
+         ^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_base.py", line 1567, in __init__
+    self._reader = self._engines[engine](
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_openpyxl.py", line 553, in __init__
+    super().__init__(
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_base.py", line 573, in __init__
+    self.book = self.load_workbook(self.handles.handle, engine_kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_openpyxl.py", line 572, in load_workbook
+    return load_workbook(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\reader\excel.py", line 346, in load_workbook
+    reader = ExcelReader(filename, read_only, keep_vba,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\reader\excel.py", line 123, in __init__
+    self.archive = _validate_archive(fn)
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\reader\excel.py", line 95, in _validate_archive
+    archive = ZipFile(filename, 'r')
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\zipfile\__init__.py", line 1354, in __init__
+    self._RealGetContents()
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\zipfile\__init__.py", line 1421, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+
+2025-07-31 15:34:23,211 - INFO - MainController initialisé - SF:12, BW:250kHz, CR:4/5
+2025-07-31 15:34:23,211 - INFO - 🚀 DÉBUT DU PROCESSUS COMPLET
+2025-07-31 15:34:23,211 - INFO - Chargement des EPCs depuis EPCS.xlsx
+2025-07-31 15:34:23,392 - ERROR - ❌ Erreur lors du chargement des EPCs: File is not a zip file
+2025-07-31 15:34:23,393 - ERROR - 💥 ÉCHEC DU PROCESSUS: File is not a zip file
+2025-07-31 15:34:23,395 - ERROR - Détails de l'erreur:
+Traceback (most recent call last):
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\MainController.py", line 307, in run_complete_process
+    self.load_input_epcs(input_file)
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\MainController.py", line 82, in load_input_epcs
+    self.original_epcs = self.epc_analyzer.load_epcs(file_path)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\EPC_OPT.py", line 28, in load_epcs
+    df = pd.read_excel(path, header=None, engine='openpyxl')
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_base.py", line 495, in read_excel
+    io = ExcelFile(
+         ^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_base.py", line 1567, in __init__
+    self._reader = self._engines[engine](
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_openpyxl.py", line 553, in __init__
+    super().__init__(
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_base.py", line 573, in __init__
+    self.book = self.load_workbook(self.handles.handle, engine_kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_openpyxl.py", line 572, in load_workbook
+    return load_workbook(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\reader\excel.py", line 346, in load_workbook
+    reader = ExcelReader(filename, read_only, keep_vba,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\reader\excel.py", line 123, in __init__
+    self.archive = _validate_archive(fn)
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\reader\excel.py", line 95, in _validate_archive
+    archive = ZipFile(filename, 'r')
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\zipfile\__init__.py", line 1354, in __init__
+    self._RealGetContents()
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\zipfile\__init__.py", line 1421, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+
+2025-07-31 15:47:55,584 - INFO - MainController initialisé - SF:10, BW:250kHz, CR:4/5
+2025-07-31 15:47:55,584 - INFO - 🚀 DÉBUT DU PROCESSUS COMPLET
+2025-07-31 15:47:55,584 - INFO - Chargement des EPCs depuis EPCS.xlsx
+2025-07-31 15:47:55,803 - ERROR - ❌ Erreur lors du chargement des EPCs: File is not a zip file
+2025-07-31 15:47:55,803 - ERROR - 💥 ÉCHEC DU PROCESSUS: File is not a zip file
+2025-07-31 15:47:55,903 - ERROR - Détails de l'erreur:
+Traceback (most recent call last):
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\MainController.py", line 307, in run_complete_process
+    self.load_input_epcs(input_file)
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\MainController.py", line 82, in load_input_epcs
+    self.original_epcs = self.epc_analyzer.load_epcs(file_path)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\EPC_OPT.py", line 28, in load_epcs
+    df = pd.read_excel(path, header=None, engine='openpyxl')
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_base.py", line 495, in read_excel
+    io = ExcelFile(
+         ^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_base.py", line 1567, in __init__
+    self._reader = self._engines[engine](
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_openpyxl.py", line 553, in __init__
+    super().__init__(
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_base.py", line 573, in __init__
+    self.book = self.load_workbook(self.handles.handle, engine_kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_openpyxl.py", line 572, in load_workbook
+    return load_workbook(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\reader\excel.py", line 346, in load_workbook
+    reader = ExcelReader(filename, read_only, keep_vba,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\reader\excel.py", line 123, in __init__
+    self.archive = _validate_archive(fn)
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\reader\excel.py", line 95, in _validate_archive
+    archive = ZipFile(filename, 'r')
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\zipfile\__init__.py", line 1354, in __init__
+    self._RealGetContents()
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\zipfile\__init__.py", line 1421, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+
+2025-07-31 15:49:18,936 - INFO - MainController initialisé - SF:7, BW:250kHz, CR:4/5
+2025-07-31 15:49:18,940 - INFO - 🚀 DÉBUT DU PROCESSUS COMPLET
+2025-07-31 15:49:18,940 - INFO - Chargement des EPCs depuis EPCS.xlsx
+2025-07-31 15:49:19,110 - ERROR - ❌ Erreur lors du chargement des EPCs: File is not a zip file
+2025-07-31 15:49:19,110 - ERROR - 💥 ÉCHEC DU PROCESSUS: File is not a zip file
+2025-07-31 15:49:19,110 - ERROR - Détails de l'erreur:
+Traceback (most recent call last):
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\MainController.py", line 307, in run_complete_process
+    self.load_input_epcs(input_file)
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\MainController.py", line 82, in load_input_epcs
+    self.original_epcs = self.epc_analyzer.load_epcs(file_path)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\EPC_OPT.py", line 28, in load_epcs
+    df = pd.read_excel(path, header=None, engine='openpyxl')
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_base.py", line 495, in read_excel
+    io = ExcelFile(
+         ^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_base.py", line 1567, in __init__
+    self._reader = self._engines[engine](
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_openpyxl.py", line 553, in __init__
+    super().__init__(
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_base.py", line 573, in __init__
+    self.book = self.load_workbook(self.handles.handle, engine_kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_openpyxl.py", line 572, in load_workbook
+    return load_workbook(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\reader\excel.py", line 346, in load_workbook
+    reader = ExcelReader(filename, read_only, keep_vba,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\reader\excel.py", line 123, in __init__
+    self.archive = _validate_archive(fn)
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\reader\excel.py", line 95, in _validate_archive
+    archive = ZipFile(filename, 'r')
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\zipfile\__init__.py", line 1354, in __init__
+    self._RealGetContents()
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\zipfile\__init__.py", line 1421, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+
+2025-07-31 15:50:15,106 - INFO - MainController initialisé - SF:7, BW:250kHz, CR:4/5
+2025-07-31 15:50:15,109 - INFO - 🚀 DÉBUT DU PROCESSUS COMPLET
+2025-07-31 15:50:15,109 - INFO - Chargement des EPCs depuis EPCS.xlsx
+2025-07-31 15:50:15,250 - ERROR - ❌ Erreur lors du chargement des EPCs: File is not a zip file
+2025-07-31 15:50:15,250 - ERROR - 💥 ÉCHEC DU PROCESSUS: File is not a zip file
+2025-07-31 15:50:15,268 - ERROR - Détails de l'erreur:
+Traceback (most recent call last):
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\MainController.py", line 307, in run_complete_process
+    self.load_input_epcs(input_file)
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\MainController.py", line 82, in load_input_epcs
+    self.original_epcs = self.epc_analyzer.load_epcs(file_path)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\EPC_OPT.py", line 28, in load_epcs
+    df = pd.read_excel(path, header=None, engine='openpyxl')
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_base.py", line 495, in read_excel
+    io = ExcelFile(
+         ^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_base.py", line 1567, in __init__
+    self._reader = self._engines[engine](
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_openpyxl.py", line 553, in __init__
+    super().__init__(
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_base.py", line 573, in __init__
+    self.book = self.load_workbook(self.handles.handle, engine_kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_openpyxl.py", line 572, in load_workbook
+    return load_workbook(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\reader\excel.py", line 346, in load_workbook
+    reader = ExcelReader(filename, read_only, keep_vba,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\reader\excel.py", line 123, in __init__
+    self.archive = _validate_archive(fn)
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\reader\excel.py", line 95, in _validate_archive
+    archive = ZipFile(filename, 'r')
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\zipfile\__init__.py", line 1354, in __init__
+    self._RealGetContents()
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\zipfile\__init__.py", line 1421, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+
+2025-07-31 15:52:14,873 - INFO - MainController initialisé - SF:7, BW:250kHz, CR:4/5
+2025-07-31 15:52:14,875 - INFO - 🚀 DÉBUT DU PROCESSUS COMPLET
+2025-07-31 15:52:14,875 - INFO - Chargement des EPCs depuis EPCS.xlsx
+2025-07-31 15:52:15,026 - ERROR - ❌ Erreur lors du chargement des EPCs: File is not a zip file
+2025-07-31 15:52:15,027 - ERROR - 💥 ÉCHEC DU PROCESSUS: File is not a zip file
+2025-07-31 15:52:15,029 - ERROR - Détails de l'erreur:
+Traceback (most recent call last):
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\MainController.py", line 307, in run_complete_process
+    self.load_input_epcs(input_file)
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\MainController.py", line 82, in load_input_epcs
+    self.original_epcs = self.epc_analyzer.load_epcs(file_path)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\EPC_OPT.py", line 28, in load_epcs
+    df = pd.read_excel(path, header=None, engine='openpyxl')
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_base.py", line 495, in read_excel
+    io = ExcelFile(
+         ^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_base.py", line 1567, in __init__
+    self._reader = self._engines[engine](
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_openpyxl.py", line 553, in __init__
+    super().__init__(
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_base.py", line 573, in __init__
+    self.book = self.load_workbook(self.handles.handle, engine_kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_openpyxl.py", line 572, in load_workbook
+    return load_workbook(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\reader\excel.py", line 346, in load_workbook
+    reader = ExcelReader(filename, read_only, keep_vba,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\reader\excel.py", line 123, in __init__
+    self.archive = _validate_archive(fn)
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\reader\excel.py", line 95, in _validate_archive
+    archive = ZipFile(filename, 'r')
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\zipfile\__init__.py", line 1354, in __init__
+    self._RealGetContents()
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\zipfile\__init__.py", line 1421, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+
+2025-07-31 15:54:01,442 - INFO - MainController initialisé - SF:7, BW:250kHz, CR:4/5
+2025-07-31 15:54:01,442 - INFO - 🚀 DÉBUT DU PROCESSUS COMPLET
+2025-07-31 15:54:01,442 - INFO - Chargement des EPCs depuis EPCS.xlsx
+2025-07-31 15:54:01,612 - ERROR - ❌ Erreur lors du chargement des EPCs: File is not a zip file
+2025-07-31 15:54:01,612 - ERROR - 💥 ÉCHEC DU PROCESSUS: File is not a zip file
+2025-07-31 15:54:01,612 - ERROR - Détails de l'erreur:
+Traceback (most recent call last):
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\MainController.py", line 307, in run_complete_process
+    self.load_input_epcs(input_file)
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\MainController.py", line 82, in load_input_epcs
+    self.original_epcs = self.epc_analyzer.load_epcs(file_path)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\EPC_OPT.py", line 28, in load_epcs
+    df = pd.read_excel(path, header=None, engine='openpyxl')
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_base.py", line 495, in read_excel
+    io = ExcelFile(
+         ^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_base.py", line 1567, in __init__
+    self._reader = self._engines[engine](
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_openpyxl.py", line 553, in __init__
+    super().__init__(
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_base.py", line 573, in __init__
+    self.book = self.load_workbook(self.handles.handle, engine_kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_openpyxl.py", line 572, in load_workbook
+    return load_workbook(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\reader\excel.py", line 346, in load_workbook
+    reader = ExcelReader(filename, read_only, keep_vba,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\reader\excel.py", line 123, in __init__
+    self.archive = _validate_archive(fn)
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\reader\excel.py", line 95, in _validate_archive
+    archive = ZipFile(filename, 'r')
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\zipfile\__init__.py", line 1354, in __init__
+    self._RealGetContents()
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\zipfile\__init__.py", line 1421, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+
+2025-07-31 15:54:21,010 - INFO - MainController initialisé - SF:8, BW:250kHz, CR:4/5
+2025-07-31 15:54:21,010 - INFO - 🚀 DÉBUT DU PROCESSUS COMPLET
+2025-07-31 15:54:21,010 - INFO - Chargement des EPCs depuis EPCS.xlsx
+2025-07-31 15:54:21,162 - ERROR - ❌ Erreur lors du chargement des EPCs: File is not a zip file
+2025-07-31 15:54:21,162 - ERROR - 💥 ÉCHEC DU PROCESSUS: File is not a zip file
+2025-07-31 15:54:21,162 - ERROR - Détails de l'erreur:
+Traceback (most recent call last):
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\MainController.py", line 307, in run_complete_process
+    self.load_input_epcs(input_file)
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\MainController.py", line 82, in load_input_epcs
+    self.original_epcs = self.epc_analyzer.load_epcs(file_path)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\EPC_OPT.py", line 28, in load_epcs
+    df = pd.read_excel(path, header=None, engine='openpyxl')
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_base.py", line 495, in read_excel
+    io = ExcelFile(
+         ^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_base.py", line 1567, in __init__
+    self._reader = self._engines[engine](
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_openpyxl.py", line 553, in __init__
+    super().__init__(
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_base.py", line 573, in __init__
+    self.book = self.load_workbook(self.handles.handle, engine_kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_openpyxl.py", line 572, in load_workbook
+    return load_workbook(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\reader\excel.py", line 346, in load_workbook
+    reader = ExcelReader(filename, read_only, keep_vba,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\reader\excel.py", line 123, in __init__
+    self.archive = _validate_archive(fn)
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\reader\excel.py", line 95, in _validate_archive
+    archive = ZipFile(filename, 'r')
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\zipfile\__init__.py", line 1354, in __init__
+    self._RealGetContents()
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\zipfile\__init__.py", line 1421, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+
+2025-07-31 15:59:39,016 - INFO - MainController initialisé - SF:12, BW:125kHz, CR:4/5
+2025-07-31 15:59:39,017 - INFO - 🚀 DÉBUT DU PROCESSUS COMPLET
+2025-07-31 15:59:39,017 - INFO - Chargement des EPCs depuis EPCS.xlsx
+2025-07-31 15:59:39,180 - ERROR - ❌ Erreur lors du chargement des EPCs: File is not a zip file
+2025-07-31 15:59:39,180 - ERROR - 💥 ÉCHEC DU PROCESSUS: File is not a zip file
+2025-07-31 15:59:39,182 - ERROR - Détails de l'erreur:
+Traceback (most recent call last):
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\MainController.py", line 307, in run_complete_process
+    self.load_input_epcs(input_file)
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\MainController.py", line 82, in load_input_epcs
+    self.original_epcs = self.epc_analyzer.load_epcs(file_path)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\EPC_OPT.py", line 28, in load_epcs
+    df = pd.read_excel(path, header=None, engine='openpyxl')
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_base.py", line 495, in read_excel
+    io = ExcelFile(
+         ^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_base.py", line 1567, in __init__
+    self._reader = self._engines[engine](
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_openpyxl.py", line 553, in __init__
+    super().__init__(
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_base.py", line 573, in __init__
+    self.book = self.load_workbook(self.handles.handle, engine_kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_openpyxl.py", line 572, in load_workbook
+    return load_workbook(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\reader\excel.py", line 346, in load_workbook
+    reader = ExcelReader(filename, read_only, keep_vba,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\reader\excel.py", line 123, in __init__
+    self.archive = _validate_archive(fn)
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\reader\excel.py", line 95, in _validate_archive
+    archive = ZipFile(filename, 'r')
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\zipfile\__init__.py", line 1354, in __init__
+    self._RealGetContents()
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\zipfile\__init__.py", line 1421, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+
+2025-07-31 15:59:49,880 - INFO - MainController initialisé - SF:7, BW:250kHz, CR:4/5
+2025-07-31 15:59:49,881 - INFO - 🚀 DÉBUT DU PROCESSUS COMPLET
+2025-07-31 15:59:49,881 - INFO - Chargement des EPCs depuis EPCS.xlsx
+2025-07-31 15:59:50,032 - ERROR - ❌ Erreur lors du chargement des EPCs: File is not a zip file
+2025-07-31 15:59:50,032 - ERROR - 💥 ÉCHEC DU PROCESSUS: File is not a zip file
+2025-07-31 15:59:50,035 - ERROR - Détails de l'erreur:
+Traceback (most recent call last):
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\MainController.py", line 307, in run_complete_process
+    self.load_input_epcs(input_file)
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\MainController.py", line 82, in load_input_epcs
+    self.original_epcs = self.epc_analyzer.load_epcs(file_path)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\EPC_OPT.py", line 28, in load_epcs
+    df = pd.read_excel(path, header=None, engine='openpyxl')
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_base.py", line 495, in read_excel
+    io = ExcelFile(
+         ^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_base.py", line 1567, in __init__
+    self._reader = self._engines[engine](
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_openpyxl.py", line 553, in __init__
+    super().__init__(
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_base.py", line 573, in __init__
+    self.book = self.load_workbook(self.handles.handle, engine_kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_openpyxl.py", line 572, in load_workbook
+    return load_workbook(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\reader\excel.py", line 346, in load_workbook
+    reader = ExcelReader(filename, read_only, keep_vba,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\reader\excel.py", line 123, in __init__
+    self.archive = _validate_archive(fn)
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\reader\excel.py", line 95, in _validate_archive
+    archive = ZipFile(filename, 'r')
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\zipfile\__init__.py", line 1354, in __init__
+    self._RealGetContents()
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\zipfile\__init__.py", line 1421, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+
+2025-07-31 16:13:20,925 - INFO - MainController initialisé - SF:7, BW:250kHz, CR:4/5
+2025-07-31 16:13:20,925 - INFO - 🚀 DÉBUT DU PROCESSUS COMPLET
+2025-07-31 16:13:20,925 - INFO - Chargement des EPCs depuis EPCS.xlsx
+2025-07-31 16:13:21,079 - ERROR - ❌ Erreur lors du chargement des EPCs: File is not a zip file
+2025-07-31 16:13:21,079 - ERROR - 💥 ÉCHEC DU PROCESSUS: File is not a zip file
+2025-07-31 16:13:21,089 - ERROR - Détails de l'erreur:
+Traceback (most recent call last):
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\MainController.py", line 307, in run_complete_process
+    self.load_input_epcs(input_file)
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\MainController.py", line 82, in load_input_epcs
+    self.original_epcs = self.epc_analyzer.load_epcs(file_path)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\EPC_OPT.py", line 28, in load_epcs
+    df = pd.read_excel(path, header=None, engine='openpyxl')
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_base.py", line 495, in read_excel
+    io = ExcelFile(
+         ^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_base.py", line 1567, in __init__
+    self._reader = self._engines[engine](
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_openpyxl.py", line 553, in __init__
+    super().__init__(
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_base.py", line 573, in __init__
+    self.book = self.load_workbook(self.handles.handle, engine_kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_openpyxl.py", line 572, in load_workbook
+    return load_workbook(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\reader\excel.py", line 346, in load_workbook
+    reader = ExcelReader(filename, read_only, keep_vba,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\reader\excel.py", line 123, in __init__
+    self.archive = _validate_archive(fn)
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\reader\excel.py", line 95, in _validate_archive
+    archive = ZipFile(filename, 'r')
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\zipfile\__init__.py", line 1354, in __init__
+    self._RealGetContents()
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\zipfile\__init__.py", line 1421, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+
+2025-07-31 16:35:36,426 - INFO - MainController initialisé - SF:7, BW:250kHz, CR:4/5
+2025-07-31 16:35:36,426 - INFO - 🚀 DÉBUT DU PROCESSUS COMPLET
+2025-07-31 16:35:36,426 - INFO - Chargement des EPCs depuis EPCS.xlsx
+2025-07-31 16:35:36,605 - ERROR - ❌ Erreur lors du chargement des EPCs: File is not a zip file
+2025-07-31 16:35:36,605 - ERROR - 💥 ÉCHEC DU PROCESSUS: File is not a zip file
+2025-07-31 16:35:36,608 - ERROR - Détails de l'erreur:
+Traceback (most recent call last):
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\MainController.py", line 307, in run_complete_process
+    self.load_input_epcs(input_file)
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\MainController.py", line 82, in load_input_epcs
+    self.original_epcs = self.epc_analyzer.load_epcs(file_path)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\EPC_OPT.py", line 28, in load_epcs
+    df = pd.read_excel(path, header=None, engine='openpyxl')
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_base.py", line 495, in read_excel
+    io = ExcelFile(
+         ^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_base.py", line 1567, in __init__
+    self._reader = self._engines[engine](
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_openpyxl.py", line 553, in __init__
+    super().__init__(
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_base.py", line 573, in __init__
+    self.book = self.load_workbook(self.handles.handle, engine_kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_openpyxl.py", line 572, in load_workbook
+    return load_workbook(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\reader\excel.py", line 346, in load_workbook
+    reader = ExcelReader(filename, read_only, keep_vba,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\reader\excel.py", line 123, in __init__
+    self.archive = _validate_archive(fn)
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\reader\excel.py", line 95, in _validate_archive
+    archive = ZipFile(filename, 'r')
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\zipfile\__init__.py", line 1354, in __init__
+    self._RealGetContents()
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\zipfile\__init__.py", line 1421, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+
+2025-07-31 16:36:54,259 - INFO - MainController initialisé - SF:7, BW:125kHz, CR:4/5
+2025-07-31 16:36:54,264 - INFO - 🚀 DÉBUT DU PROCESSUS COMPLET
+2025-07-31 16:36:54,264 - INFO - Chargement des EPCs depuis EPCS.xlsx
+2025-07-31 16:36:54,431 - ERROR - ❌ Erreur lors du chargement des EPCs: File is not a zip file
+2025-07-31 16:36:54,432 - ERROR - 💥 ÉCHEC DU PROCESSUS: File is not a zip file
+2025-07-31 16:36:54,435 - ERROR - Détails de l'erreur:
+Traceback (most recent call last):
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\MainController.py", line 307, in run_complete_process
+    self.load_input_epcs(input_file)
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\MainController.py", line 82, in load_input_epcs
+    self.original_epcs = self.epc_analyzer.load_epcs(file_path)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\EPC_OPT.py", line 28, in load_epcs
+    df = pd.read_excel(path, header=None, engine='openpyxl')
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_base.py", line 495, in read_excel
+    io = ExcelFile(
+         ^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_base.py", line 1567, in __init__
+    self._reader = self._engines[engine](
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_openpyxl.py", line 553, in __init__
+    super().__init__(
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_base.py", line 573, in __init__
+    self.book = self.load_workbook(self.handles.handle, engine_kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_openpyxl.py", line 572, in load_workbook
+    return load_workbook(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\reader\excel.py", line 346, in load_workbook
+    reader = ExcelReader(filename, read_only, keep_vba,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\reader\excel.py", line 123, in __init__
+    self.archive = _validate_archive(fn)
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\reader\excel.py", line 95, in _validate_archive
+    archive = ZipFile(filename, 'r')
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\zipfile\__init__.py", line 1354, in __init__
+    self._RealGetContents()
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\zipfile\__init__.py", line 1421, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+
+2025-08-01 10:05:18,604 - INFO - MainController initialisé - SF:7, BW:125kHz, CR:4/5
+2025-08-01 10:05:18,604 - INFO - 🚀 DÉBUT DU PROCESSUS COMPLET
+2025-08-01 10:05:18,604 - INFO - Chargement des EPCs depuis EPCS.xlsx
+2025-08-01 10:05:18,842 - ERROR - ❌ Erreur lors du chargement des EPCs: File is not a zip file
+2025-08-01 10:05:18,851 - ERROR - 💥 ÉCHEC DU PROCESSUS: File is not a zip file
+2025-08-01 10:05:18,933 - ERROR - Détails de l'erreur:
+Traceback (most recent call last):
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\MainController.py", line 307, in run_complete_process
+    self.load_input_epcs(input_file)
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\MainController.py", line 82, in load_input_epcs
+    self.original_epcs = self.epc_analyzer.load_epcs(file_path)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\EPC_OPT.py", line 28, in load_epcs
+    df = pd.read_excel(path, header=None, engine='openpyxl')
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_base.py", line 495, in read_excel
+    io = ExcelFile(
+         ^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_base.py", line 1567, in __init__
+    self._reader = self._engines[engine](
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_openpyxl.py", line 553, in __init__
+    super().__init__(
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_base.py", line 573, in __init__
+    self.book = self.load_workbook(self.handles.handle, engine_kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_openpyxl.py", line 572, in load_workbook
+    return load_workbook(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\reader\excel.py", line 346, in load_workbook
+    reader = ExcelReader(filename, read_only, keep_vba,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\reader\excel.py", line 123, in __init__
+    self.archive = _validate_archive(fn)
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\reader\excel.py", line 95, in _validate_archive
+    archive = ZipFile(filename, 'r')
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\zipfile\__init__.py", line 1354, in __init__
+    self._RealGetContents()
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\zipfile\__init__.py", line 1421, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+
+2025-08-01 10:45:15,943 - INFO - MainController initialisé - SF:7, BW:125kHz, CR:4/5
+2025-08-01 10:45:15,943 - INFO - 🚀 DÉBUT DU PROCESSUS COMPLET
+2025-08-01 10:45:15,943 - INFO - Chargement des EPCs depuis EPCS.xlsx
+2025-08-01 10:45:16,123 - ERROR - ❌ Erreur lors du chargement des EPCs: File is not a zip file
+2025-08-01 10:45:16,123 - ERROR - 💥 ÉCHEC DU PROCESSUS: File is not a zip file
+2025-08-01 10:45:16,127 - ERROR - Détails de l'erreur:
+Traceback (most recent call last):
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\MainController.py", line 307, in run_complete_process
+    self.load_input_epcs(input_file)
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\MainController.py", line 82, in load_input_epcs
+    self.original_epcs = self.epc_analyzer.load_epcs(file_path)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\EPC_OPT.py", line 28, in load_epcs
+    df = pd.read_excel(path, header=None, engine='openpyxl')
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_base.py", line 495, in read_excel
+    io = ExcelFile(
+         ^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_base.py", line 1567, in __init__
+    self._reader = self._engines[engine](
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_openpyxl.py", line 553, in __init__
+    super().__init__(
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_base.py", line 573, in __init__
+    self.book = self.load_workbook(self.handles.handle, engine_kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_openpyxl.py", line 572, in load_workbook
+    return load_workbook(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\reader\excel.py", line 346, in load_workbook
+    reader = ExcelReader(filename, read_only, keep_vba,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\reader\excel.py", line 123, in __init__
+    self.archive = _validate_archive(fn)
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\reader\excel.py", line 95, in _validate_archive
+    archive = ZipFile(filename, 'r')
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\zipfile\__init__.py", line 1354, in __init__
+    self._RealGetContents()
+  File "C:\Users\HamzaELKHRISSI\AppData\Local\Programs\Python\Python312\Lib\zipfile\__init__.py", line 1421, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+
+2025-08-01 10:53:59,872 - INFO - MainController initialisé - SF:7, BW:125kHz, CR:4/5
+2025-08-01 10:53:59,873 - INFO - 🚀 DÉBUT DU PROCESSUS COMPLET
+2025-08-01 10:53:59,873 - INFO - Chargement des EPCs depuis EPCS.xlsx
+2025-08-01 10:53:59,891 - INFO - ✅ 9 EPCs chargés avec succès
+2025-08-01 10:53:59,891 - INFO - Début de l'optimisation des EPCs
+2025-08-01 10:53:59,924 - INFO - ✅ Résultats optimisés sauvegardés dans EPCSOPT.xlsx
+2025-08-01 10:53:59,926 - INFO - 📊 Optimisation terminée:
+2025-08-01 10:53:59,926 - INFO -    • Groupes créés: 3
+2025-08-01 10:53:59,926 - INFO -    • Groupes compressés: 1
+2025-08-01 10:53:59,926 - INFO -    • Compression moyenne: 23.0%
+2025-08-01 10:53:59,926 - INFO - Initialisation du calculateur LoRaWAN
+2025-08-01 10:53:59,926 - ERROR - ❌ Erreur lors de l'initialisation du calculateur: Could not reconstruct 7 EPCs for prefix 'E2801160600002000000'
+2025-08-01 10:53:59,926 - ERROR - 💥 ÉCHEC DU PROCESSUS: Could not reconstruct 7 EPCs for prefix 'E2801160600002000000'
+2025-08-01 10:53:59,926 - ERROR - Détails de l'erreur:
+Traceback (most recent call last):
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\MainController.py", line 313, in run_complete_process
+    self.create_lorawan_calculator()
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\MainController.py", line 141, in create_lorawan_calculator
+    self.lorawan_calculator = EPCLoRaWANCalculator(
+                              ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\Encapsulation.py", line 43, in __init__
+    self.epc_list = self._reconstruct_epcs_from_df(epc_list, optimized_df)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\Encapsulation.py", line 84, in _reconstruct_epcs_from_df
+    raise ValueError(f"Could not reconstruct {suffix_count} EPCs for prefix '{prefix}'")
+ValueError: Could not reconstruct 7 EPCs for prefix 'E2801160600002000000'
+
+2025-08-01 11:08:30,250 - INFO - MainController initialisé - SF:7, BW:125kHz, CR:4/5
+2025-08-01 11:08:30,251 - INFO - 🚀 DÉBUT DU PROCESSUS COMPLET
+2025-08-01 11:08:30,252 - INFO - Chargement des EPCs depuis EPCS.xlsx
+2025-08-01 11:08:30,270 - INFO - ✅ 9 EPCs chargés avec succès
+2025-08-01 11:08:30,271 - INFO - Début de l'optimisation des EPCs
+2025-08-01 11:08:30,285 - INFO - ✅ Résultats optimisés sauvegardés dans EPCSOPT.xlsx
+2025-08-01 11:08:30,286 - INFO - 📊 Optimisation terminée:
+2025-08-01 11:08:30,286 - INFO -    • Groupes créés: 3
+2025-08-01 11:08:30,287 - INFO -    • Groupes compressés: 1
+2025-08-01 11:08:30,287 - INFO -    • Compression moyenne: 23.0%
+2025-08-01 11:08:30,288 - INFO - Initialisation du calculateur LoRaWAN
+2025-08-01 11:08:30,289 - ERROR - ❌ Erreur lors de l'initialisation du calculateur: Could not reconstruct 7 EPCs for prefix 'E2801160600002000000'
+2025-08-01 11:08:30,290 - ERROR - 💥 ÉCHEC DU PROCESSUS: Could not reconstruct 7 EPCs for prefix 'E2801160600002000000'
+2025-08-01 11:08:30,291 - ERROR - Détails de l'erreur:
+Traceback (most recent call last):
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\MainController.py", line 313, in run_complete_process
+    self.create_lorawan_calculator()
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\MainController.py", line 141, in create_lorawan_calculator
+    self.lorawan_calculator = EPCLoRaWANCalculator(
+                              ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\Encapsulation.py", line 43, in __init__
+    self.epc_list = self._reconstruct_epcs_from_df(epc_list, optimized_df)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\Encapsulation.py", line 84, in _reconstruct_epcs_from_df
+    raise ValueError(f"Could not reconstruct {suffix_count} EPCs for prefix '{prefix}'")
+ValueError: Could not reconstruct 7 EPCs for prefix 'E2801160600002000000'
+
+2025-08-01 11:09:20,396 - INFO - MainController initialisé - SF:7, BW:125kHz, CR:4/5
+2025-08-01 11:09:20,397 - INFO - 🚀 DÉBUT DU PROCESSUS COMPLET
+2025-08-01 11:09:20,397 - INFO - Chargement des EPCs depuis EPCS.xlsx
+2025-08-01 11:09:20,414 - INFO - ✅ 9 EPCs chargés avec succès
+2025-08-01 11:09:20,415 - INFO - Début de l'optimisation des EPCs
+2025-08-01 11:09:20,427 - INFO - ✅ Résultats optimisés sauvegardés dans EPCSOPT.xlsx
+2025-08-01 11:09:20,428 - INFO - 📊 Optimisation terminée:
+2025-08-01 11:09:20,428 - INFO -    • Groupes créés: 3
+2025-08-01 11:09:20,428 - INFO -    • Groupes compressés: 1
+2025-08-01 11:09:20,428 - INFO -    • Compression moyenne: 23.0%
+2025-08-01 11:09:20,428 - INFO - Initialisation du calculateur LoRaWAN
+2025-08-01 11:09:20,429 - ERROR - ❌ Erreur lors de l'initialisation du calculateur: Could not reconstruct 7 EPCs for prefix 'E2801160600002000000'
+2025-08-01 11:09:20,429 - ERROR - 💥 ÉCHEC DU PROCESSUS: Could not reconstruct 7 EPCs for prefix 'E2801160600002000000'
+2025-08-01 11:09:20,431 - ERROR - Détails de l'erreur:
+Traceback (most recent call last):
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\MainController.py", line 313, in run_complete_process
+    self.create_lorawan_calculator()
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\MainController.py", line 141, in create_lorawan_calculator
+    self.lorawan_calculator = EPCLoRaWANCalculator(
+                              ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\Encapsulation.py", line 43, in __init__
+    self.epc_list = self._reconstruct_epcs_from_df(epc_list, optimized_df)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\Encapsulation.py", line 84, in _reconstruct_epcs_from_df
+    raise ValueError(f"Could not reconstruct {suffix_count} EPCs for prefix '{prefix}'")
+ValueError: Could not reconstruct 7 EPCs for prefix 'E2801160600002000000'
+
+2025-08-01 11:22:13,361 - INFO - MainController initialisé - SF:7, BW:125kHz, CR:4/5
+2025-08-01 11:22:13,362 - INFO - 🚀 DÉBUT DU PROCESSUS COMPLET
+2025-08-01 11:22:13,362 - INFO - Chargement des EPCs depuis EPCS.xlsx
+2025-08-01 11:22:13,373 - INFO - ✅ 9 EPCs chargés avec succès
+2025-08-01 11:22:13,374 - INFO - Début de l'optimisation des EPCs
+2025-08-01 11:22:13,389 - INFO - ✅ Résultats optimisés sauvegardés dans EPCSOPT.xlsx
+2025-08-01 11:22:13,390 - INFO - 📊 Optimisation terminée:
+2025-08-01 11:22:13,391 - INFO -    • Groupes créés: 3
+2025-08-01 11:22:13,391 - INFO -    • Groupes compressés: 1
+2025-08-01 11:22:13,392 - INFO -    • Compression moyenne: 23.0%
+2025-08-01 11:22:13,392 - INFO - Initialisation du calculateur LoRaWAN
+2025-08-01 11:22:13,393 - ERROR - ❌ Erreur lors de l'initialisation du calculateur: Could not reconstruct 7 EPCs for prefix 'E2801160600002000000'
+2025-08-01 11:22:13,394 - ERROR - 💥 ÉCHEC DU PROCESSUS: Could not reconstruct 7 EPCs for prefix 'E2801160600002000000'
+2025-08-01 11:22:13,395 - ERROR - Détails de l'erreur:
+Traceback (most recent call last):
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\MainController.py", line 313, in run_complete_process
+    self.create_lorawan_calculator()
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\MainController.py", line 141, in create_lorawan_calculator
+    self.lorawan_calculator = EPCLoRaWANCalculator(
+                              ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\Encapsulation.py", line 43, in __init__
+    self.epc_list = self._reconstruct_epcs_from_df(epc_list, optimized_df)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\Encapsulation.py", line 84, in _reconstruct_epcs_from_df
+    raise ValueError(f"Could not reconstruct {suffix_count} EPCs for prefix '{prefix}'")
+ValueError: Could not reconstruct 7 EPCs for prefix 'E2801160600002000000'
+
+2025-08-01 11:31:23,469 - INFO - MainController initialisé - SF:7, BW:125kHz, CR:4/5
+2025-08-01 11:31:23,470 - INFO - 🚀 DÉBUT DU PROCESSUS COMPLET
+2025-08-01 11:31:23,470 - INFO - Chargement des EPCs depuis EPCS.xlsx
+2025-08-01 11:31:23,484 - INFO - ✅ 9 EPCs chargés avec succès
+2025-08-01 11:31:23,484 - INFO - Début de l'optimisation des EPCs
+2025-08-01 11:31:23,498 - INFO - ✅ Résultats optimisés sauvegardés dans EPCSOPT.xlsx
+2025-08-01 11:31:23,499 - INFO - 📊 Optimisation terminée:
+2025-08-01 11:31:23,500 - INFO -    • Groupes créés: 3
+2025-08-01 11:31:23,500 - INFO -    • Groupes compressés: 1
+2025-08-01 11:31:23,500 - INFO -    • Compression moyenne: 23.0%
+2025-08-01 11:31:23,500 - INFO - Initialisation du calculateur LoRaWAN
+2025-08-01 11:31:23,501 - ERROR - ❌ Erreur lors de l'initialisation du calculateur: Could not reconstruct 7 EPCs for prefix 'E2801160600002000000'
+2025-08-01 11:31:23,501 - ERROR - 💥 ÉCHEC DU PROCESSUS: Could not reconstruct 7 EPCs for prefix 'E2801160600002000000'
+2025-08-01 11:31:23,503 - ERROR - Détails de l'erreur:
+Traceback (most recent call last):
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\MainController.py", line 313, in run_complete_process
+    self.create_lorawan_calculator()
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\MainController.py", line 141, in create_lorawan_calculator
+    self.lorawan_calculator = EPCLoRaWANCalculator(
+                              ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\Encapsulation.py", line 43, in __init__
+    self.epc_list = self._reconstruct_epcs_from_df(epc_list, optimized_df)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\Encapsulation.py", line 84, in _reconstruct_epcs_from_df
+    raise ValueError(f"Could not reconstruct {suffix_count} EPCs for prefix '{prefix}'")
+ValueError: Could not reconstruct 7 EPCs for prefix 'E2801160600002000000'
+
+2025-08-01 11:32:50,973 - INFO - MainController initialisé - SF:7, BW:125kHz, CR:4/5
+2025-08-01 11:32:50,975 - INFO - 🚀 DÉBUT DU PROCESSUS COMPLET
+2025-08-01 11:32:50,975 - INFO - Chargement des EPCs depuis EPCS.xlsx
+2025-08-01 11:32:50,986 - INFO - ✅ 9 EPCs chargés avec succès
+2025-08-01 11:32:50,986 - INFO - Début de l'optimisation des EPCs
+2025-08-01 11:32:51,002 - INFO - ✅ Résultats optimisés sauvegardés dans EPCSOPT.xlsx
+2025-08-01 11:32:51,003 - INFO - 📊 Optimisation terminée:
+2025-08-01 11:32:51,004 - INFO -    • Groupes créés: 3
+2025-08-01 11:32:51,004 - INFO -    • Groupes compressés: 1
+2025-08-01 11:32:51,004 - INFO -    • Compression moyenne: 23.0%
+2025-08-01 11:32:51,004 - INFO - Initialisation du calculateur LoRaWAN
+2025-08-01 11:32:51,005 - ERROR - ❌ Erreur lors de l'initialisation du calculateur: Could not reconstruct 7 EPCs for prefix 'E2801160600002000000'
+2025-08-01 11:32:51,005 - ERROR - 💥 ÉCHEC DU PROCESSUS: Could not reconstruct 7 EPCs for prefix 'E2801160600002000000'
+2025-08-01 11:32:51,005 - ERROR - Détails de l'erreur:
+Traceback (most recent call last):
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\MainController.py", line 313, in run_complete_process
+    self.create_lorawan_calculator()
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\MainController.py", line 141, in create_lorawan_calculator
+    self.lorawan_calculator = EPCLoRaWANCalculator(
+                              ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\Encapsulation.py", line 43, in __init__
+    self.epc_list = self._reconstruct_epcs_from_df(epc_list, optimized_df)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\Encapsulation.py", line 84, in _reconstruct_epcs_from_df
+    raise ValueError(f"Could not reconstruct {suffix_count} EPCs for prefix '{prefix}'")
+ValueError: Could not reconstruct 7 EPCs for prefix 'E2801160600002000000'
+
+2025-08-01 11:37:49,707 - INFO - MainController initialisé - SF:7, BW:125kHz, CR:4/5
+2025-08-01 11:37:49,708 - INFO - 🚀 DÉBUT DU PROCESSUS COMPLET
+2025-08-01 11:37:49,708 - INFO - Chargement des EPCs depuis EPCS.xlsx
+2025-08-01 11:37:49,721 - INFO - ✅ 9 EPCs chargés avec succès
+2025-08-01 11:37:49,721 - INFO - Début de l'optimisation des EPCs
+2025-08-01 11:37:49,737 - INFO - ✅ Résultats optimisés sauvegardés dans EPCSOPT.xlsx
+2025-08-01 11:37:49,739 - INFO - 📊 Optimisation terminée:
+2025-08-01 11:37:49,739 - INFO -    • Groupes créés: 3
+2025-08-01 11:37:49,739 - INFO -    • Groupes compressés: 1
+2025-08-01 11:37:49,739 - INFO -    • Compression moyenne: 23.0%
+2025-08-01 11:37:49,740 - INFO - Initialisation du calculateur LoRaWAN
+2025-08-01 11:37:49,740 - ERROR - ❌ Erreur lors de l'initialisation du calculateur: Could not reconstruct 7 EPCs for prefix 'E2801160600002000000'
+2025-08-01 11:37:49,741 - ERROR - 💥 ÉCHEC DU PROCESSUS: Could not reconstruct 7 EPCs for prefix 'E2801160600002000000'
+2025-08-01 11:37:49,742 - ERROR - Détails de l'erreur:
+Traceback (most recent call last):
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\MainController.py", line 313, in run_complete_process
+    self.create_lorawan_calculator()
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\MainController.py", line 141, in create_lorawan_calculator
+    self.lorawan_calculator = EPCLoRaWANCalculator(
+                              ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\Encapsulation.py", line 43, in __init__
+    self.epc_list = self._reconstruct_epcs_from_df(epc_list, optimized_df)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\Encapsulation.py", line 84, in _reconstruct_epcs_from_df
+    raise ValueError(f"Could not reconstruct {suffix_count} EPCs for prefix '{prefix}'")
+ValueError: Could not reconstruct 7 EPCs for prefix 'E2801160600002000000'
+
+2025-08-01 11:43:52,010 - INFO - MainController initialisé - SF:7, BW:125kHz, CR:4/5
+2025-08-01 11:43:52,011 - INFO - 🚀 DÉBUT DU PROCESSUS COMPLET
+2025-08-01 11:43:52,012 - INFO - Chargement des EPCs depuis EPCS.xlsx
+2025-08-01 11:43:52,023 - INFO - ✅ 9 EPCs chargés avec succès
+2025-08-01 11:43:52,023 - INFO - Début de l'optimisation des EPCs
+2025-08-01 11:43:52,040 - INFO - ✅ Résultats optimisés sauvegardés dans EPCSOPT.xlsx
+2025-08-01 11:43:52,041 - INFO - 📊 Optimisation terminée:
+2025-08-01 11:43:52,041 - INFO -    • Groupes créés: 3
+2025-08-01 11:43:52,041 - INFO -    • Groupes compressés: 1
+2025-08-01 11:43:52,043 - INFO -    • Compression moyenne: 23.0%
+2025-08-01 11:43:52,043 - INFO - Initialisation du calculateur LoRaWAN
+2025-08-01 11:43:52,043 - ERROR - ❌ Erreur lors de l'initialisation du calculateur: Could not reconstruct 7 EPCs for prefix 'E2801160600002000000'
+2025-08-01 11:43:52,043 - ERROR - 💥 ÉCHEC DU PROCESSUS: Could not reconstruct 7 EPCs for prefix 'E2801160600002000000'
+2025-08-01 11:43:52,045 - ERROR - Détails de l'erreur:
+Traceback (most recent call last):
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\MainController.py", line 313, in run_complete_process
+    self.create_lorawan_calculator()
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\MainController.py", line 141, in create_lorawan_calculator
+    self.lorawan_calculator = EPCLoRaWANCalculator(
+                              ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\Encapsulation.py", line 43, in __init__
+    self.epc_list = self._reconstruct_epcs_from_df(epc_list, optimized_df)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\Encapsulation.py", line 84, in _reconstruct_epcs_from_df
+    raise ValueError(f"Could not reconstruct {suffix_count} EPCs for prefix '{prefix}'")
+ValueError: Could not reconstruct 7 EPCs for prefix 'E2801160600002000000'
+
+2025-08-01 11:51:32,827 - INFO - MainController initialisé - SF:7, BW:125kHz, CR:4/5
+2025-08-01 11:51:32,827 - INFO - 🚀 DÉBUT DU PROCESSUS COMPLET
+2025-08-01 11:51:32,827 - INFO - Chargement des EPCs depuis EPCS.xlsx
+2025-08-01 11:51:32,858 - INFO - ✅ 9 EPCs chargés avec succès
+2025-08-01 11:51:32,859 - INFO - Début de l'optimisation des EPCs
+2025-08-01 11:51:32,872 - INFO - ✅ Résultats optimisés sauvegardés dans EPCSOPT.xlsx
+2025-08-01 11:51:32,873 - INFO - 📊 Optimisation terminée:
+2025-08-01 11:51:32,874 - INFO -    • Groupes créés: 3
+2025-08-01 11:51:32,874 - INFO -    • Groupes compressés: 1
+2025-08-01 11:51:32,874 - INFO -    • Compression moyenne: 23.0%
+2025-08-01 11:51:32,874 - INFO - Initialisation du calculateur LoRaWAN
+2025-08-01 11:51:32,875 - ERROR - ❌ Erreur lors de l'initialisation du calculateur: Could not reconstruct 7 EPCs for prefix 'E2801160600002000000'
+2025-08-01 11:51:32,875 - ERROR - 💥 ÉCHEC DU PROCESSUS: Could not reconstruct 7 EPCs for prefix 'E2801160600002000000'
+2025-08-01 11:51:32,876 - ERROR - Détails de l'erreur:
+Traceback (most recent call last):
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\MainController.py", line 313, in run_complete_process
+    self.create_lorawan_calculator()
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\MainController.py", line 141, in create_lorawan_calculator
+    self.lorawan_calculator = EPCLoRaWANCalculator(
+                              ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\Encapsulation.py", line 43, in __init__
+    self.epc_list = self._reconstruct_epcs_from_df(epc_list, optimized_df)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\Encapsulation.py", line 84, in _reconstruct_epcs_from_df
+    raise ValueError(f"Could not reconstruct {suffix_count} EPCs for prefix '{prefix}'")
+ValueError: Could not reconstruct 7 EPCs for prefix 'E2801160600002000000'
+
+2025-08-01 11:56:19,552 - INFO - MainController initialisé - SF:7, BW:125kHz, CR:4/5
+2025-08-01 11:56:19,552 - INFO - 🚀 DÉBUT DU PROCESSUS COMPLET
+2025-08-01 11:56:19,552 - INFO - Chargement des EPCs depuis EPCS.xlsx
+2025-08-01 11:56:19,571 - INFO - ✅ 9 EPCs chargés avec succès
+2025-08-01 11:56:19,571 - INFO - Début de l'optimisation des EPCs
+2025-08-01 11:56:19,578 - INFO - ✅ Résultats optimisés sauvegardés dans EPCSOPT.xlsx
+2025-08-01 11:56:19,588 - INFO - 📊 Optimisation terminée:
+2025-08-01 11:56:19,589 - INFO -    • Groupes créés: 3
+2025-08-01 11:56:19,589 - INFO -    • Groupes compressés: 1
+2025-08-01 11:56:19,589 - INFO -    • Compression moyenne: 23.0%
+2025-08-01 11:56:19,589 - INFO - Initialisation du calculateur LoRaWAN
+2025-08-01 11:56:19,590 - ERROR - ❌ Erreur lors de l'initialisation du calculateur: Could not reconstruct 7 EPCs for prefix 'E2801160600002000000'
+2025-08-01 11:56:19,590 - ERROR - 💥 ÉCHEC DU PROCESSUS: Could not reconstruct 7 EPCs for prefix 'E2801160600002000000'
+2025-08-01 11:56:19,617 - ERROR - Détails de l'erreur:
+Traceback (most recent call last):
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\MainController.py", line 313, in run_complete_process
+    self.create_lorawan_calculator()
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\MainController.py", line 141, in create_lorawan_calculator
+    self.lorawan_calculator = EPCLoRaWANCalculator(
+                              ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\Encapsulation.py", line 43, in __init__
+    self.epc_list = self._reconstruct_epcs_from_df(epc_list, optimized_df)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\Encapsulation.py", line 84, in _reconstruct_epcs_from_df
+    raise ValueError(f"Could not reconstruct {suffix_count} EPCs for prefix '{prefix}'")
+ValueError: Could not reconstruct 7 EPCs for prefix 'E2801160600002000000'
+
+2025-08-01 11:58:21,621 - INFO - MainController initialisé - SF:7, BW:125kHz, CR:4/5
+2025-08-01 11:58:21,622 - INFO - 🚀 DÉBUT DU PROCESSUS COMPLET
+2025-08-01 11:58:21,622 - INFO - Chargement des EPCs depuis EPCS.xlsx
+2025-08-01 11:58:21,637 - INFO - ✅ 9 EPCs chargés avec succès
+2025-08-01 11:58:21,637 - INFO - Début de l'optimisation des EPCs
+2025-08-01 11:58:21,653 - INFO - ✅ Résultats optimisés sauvegardés dans EPCSOPT.xlsx
+2025-08-01 11:58:21,655 - INFO - 📊 Optimisation terminée:
+2025-08-01 11:58:21,655 - INFO -    • Groupes créés: 3
+2025-08-01 11:58:21,655 - INFO -    • Groupes compressés: 1
+2025-08-01 11:58:21,655 - INFO -    • Compression moyenne: 23.0%
+2025-08-01 11:58:21,656 - INFO - Initialisation du calculateur LoRaWAN
+2025-08-01 11:58:21,656 - ERROR - ❌ Erreur lors de l'initialisation du calculateur: Could not reconstruct 7 EPCs for prefix 'E2801160600002000000'
+2025-08-01 11:58:21,656 - ERROR - 💥 ÉCHEC DU PROCESSUS: Could not reconstruct 7 EPCs for prefix 'E2801160600002000000'
+2025-08-01 11:58:21,657 - ERROR - Détails de l'erreur:
+Traceback (most recent call last):
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\MainController.py", line 313, in run_complete_process
+    self.create_lorawan_calculator()
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\MainController.py", line 141, in create_lorawan_calculator
+    self.lorawan_calculator = EPCLoRaWANCalculator(
+                              ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\Encapsulation.py", line 43, in __init__
+    self.epc_list = self._reconstruct_epcs_from_df(epc_list, optimized_df)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\Encapsulation.py", line 84, in _reconstruct_epcs_from_df
+    raise ValueError(f"Could not reconstruct {suffix_count} EPCs for prefix '{prefix}'")
+ValueError: Could not reconstruct 7 EPCs for prefix 'E2801160600002000000'
+
+2025-08-01 11:59:44,844 - INFO - MainController initialisé - SF:7, BW:125kHz, CR:4/5
+2025-08-01 11:59:44,846 - INFO - 🚀 DÉBUT DU PROCESSUS COMPLET
+2025-08-01 11:59:44,847 - INFO - Chargement des EPCs depuis EPCS.xlsx
+2025-08-01 11:59:44,882 - INFO - ✅ 9 EPCs chargés avec succès
+2025-08-01 11:59:44,882 - INFO - Début de l'optimisation des EPCs
+2025-08-01 11:59:44,893 - INFO - ✅ Résultats optimisés sauvegardés dans EPCSOPT.xlsx
+2025-08-01 11:59:44,896 - INFO - 📊 Optimisation terminée:
+2025-08-01 11:59:44,897 - INFO -    • Groupes créés: 3
+2025-08-01 11:59:44,898 - INFO -    • Groupes compressés: 1
+2025-08-01 11:59:44,898 - INFO -    • Compression moyenne: 23.0%
+2025-08-01 11:59:44,899 - INFO - Initialisation du calculateur LoRaWAN
+2025-08-01 11:59:44,899 - ERROR - ❌ Erreur lors de l'initialisation du calculateur: Could not reconstruct 7 EPCs for prefix 'E2801160600002000000'
+2025-08-01 11:59:44,899 - ERROR - 💥 ÉCHEC DU PROCESSUS: Could not reconstruct 7 EPCs for prefix 'E2801160600002000000'
+2025-08-01 11:59:44,901 - ERROR - Détails de l'erreur:
+Traceback (most recent call last):
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\MainController.py", line 313, in run_complete_process
+    self.create_lorawan_calculator()
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\MainController.py", line 141, in create_lorawan_calculator
+    self.lorawan_calculator = EPCLoRaWANCalculator(
+                              ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\Encapsulation.py", line 43, in __init__
+    self.epc_list = self._reconstruct_epcs_from_df(epc_list, optimized_df)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\Encapsulation.py", line 84, in _reconstruct_epcs_from_df
+    raise ValueError(f"Could not reconstruct {suffix_count} EPCs for prefix '{prefix}'")
+ValueError: Could not reconstruct 7 EPCs for prefix 'E2801160600002000000'
+

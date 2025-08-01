@@ -1,0 +1,146 @@
+2025-08-01 10:55:58,590 - INFO - MainController initialisé - SF:12, BW:125kHz, CR:4/5
+2025-08-01 10:55:58,590 - INFO - 🚀 DÉBUT DU PROCESSUS COMPLET
+2025-08-01 10:55:58,590 - INFO - Chargement des EPCs depuis EPCS.xlsx
+2025-08-01 10:55:58,788 - INFO - ✅ 9 EPCs chargés avec succès
+2025-08-01 10:55:58,788 - INFO - Début de l'optimisation des EPCs
+2025-08-01 10:55:58,812 - INFO - ✅ Résultats optimisés sauvegardés dans EPCSOPT.xlsx
+2025-08-01 10:55:58,812 - INFO - 📊 Optimisation terminée:
+2025-08-01 10:55:58,812 - INFO -    • Groupes créés: 3
+2025-08-01 10:55:58,812 - INFO -    • Groupes compressés: 1
+2025-08-01 10:55:58,812 - INFO -    • Compression moyenne: 23.0%
+2025-08-01 10:55:58,812 - INFO - Initialisation du calculateur LoRaWAN
+2025-08-01 10:55:58,812 - ERROR - ❌ Erreur lors de l'initialisation du calculateur: Could not reconstruct 7 EPCs for prefix 'E2801160600002000000'
+2025-08-01 10:55:58,812 - ERROR - ❌ Erreur lors de la génération des payloads: Could not reconstruct 7 EPCs for prefix 'E2801160600002000000'
+2025-08-01 10:55:58,812 - ERROR - 💥 ÉCHEC DU PROCESSUS: Could not reconstruct 7 EPCs for prefix 'E2801160600002000000'
+2025-08-01 10:55:58,812 - ERROR - Détails de l'erreur:
+Traceback (most recent call last):
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\MainController.py", line 315, in run_complete_process
+    self.process_groups_to_payloads()
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\MainController.py", line 164, in process_groups_to_payloads
+    self.create_lorawan_calculator()
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\MainController.py", line 141, in create_lorawan_calculator
+    self.lorawan_calculator = EPCLoRaWANCalculator(
+                              ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\Encapsulation.py", line 43, in __init__
+    self.epc_list = self._reconstruct_epcs_from_df(epc_list, optimized_df)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\Encapsulation.py", line 84, in _reconstruct_epcs_from_df
+    raise ValueError(f"Could not reconstruct {suffix_count} EPCs for prefix '{prefix}'")
+ValueError: Could not reconstruct 7 EPCs for prefix 'E2801160600002000000'
+
+2025-08-01 10:56:06,346 - INFO - MainController initialisé - SF:12, BW:125kHz, CR:4/5
+2025-08-01 10:56:06,346 - INFO - 🚀 DÉBUT DU PROCESSUS COMPLET
+2025-08-01 10:56:06,346 - INFO - Chargement des EPCs depuis EPCS.xlsx
+2025-08-01 10:56:06,542 - INFO - ✅ 9 EPCs chargés avec succès
+2025-08-01 10:56:06,542 - INFO - Début de l'optimisation des EPCs
+2025-08-01 10:56:06,556 - INFO - ✅ Résultats optimisés sauvegardés dans EPCSOPT.xlsx
+2025-08-01 10:56:06,557 - INFO - 📊 Optimisation terminée:
+2025-08-01 10:56:06,557 - INFO -    • Groupes créés: 3
+2025-08-01 10:56:06,557 - INFO -    • Groupes compressés: 1
+2025-08-01 10:56:06,557 - INFO -    • Compression moyenne: 23.0%
+2025-08-01 10:56:06,557 - INFO - Initialisation du calculateur LoRaWAN
+2025-08-01 10:56:06,557 - ERROR - ❌ Erreur lors de l'initialisation du calculateur: Could not reconstruct 7 EPCs for prefix 'E2801160600002000000'
+2025-08-01 10:56:06,558 - ERROR - ❌ Erreur lors de la génération des payloads: Could not reconstruct 7 EPCs for prefix 'E2801160600002000000'
+2025-08-01 10:56:06,558 - ERROR - 💥 ÉCHEC DU PROCESSUS: Could not reconstruct 7 EPCs for prefix 'E2801160600002000000'
+2025-08-01 10:56:06,558 - ERROR - Détails de l'erreur:
+Traceback (most recent call last):
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\MainController.py", line 315, in run_complete_process
+    self.process_groups_to_payloads()
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\MainController.py", line 164, in process_groups_to_payloads
+    self.create_lorawan_calculator()
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\MainController.py", line 141, in create_lorawan_calculator
+    self.lorawan_calculator = EPCLoRaWANCalculator(
+                              ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\Encapsulation.py", line 43, in __init__
+    self.epc_list = self._reconstruct_epcs_from_df(epc_list, optimized_df)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\Encapsulation.py", line 84, in _reconstruct_epcs_from_df
+    raise ValueError(f"Could not reconstruct {suffix_count} EPCs for prefix '{prefix}'")
+ValueError: Could not reconstruct 7 EPCs for prefix 'E2801160600002000000'
+
+2025-08-01 10:56:31,318 - INFO - MainController initialisé - SF:12, BW:125kHz, CR:4/5
+2025-08-01 10:56:31,318 - INFO - 🚀 DÉBUT DU PROCESSUS COMPLET
+2025-08-01 10:56:31,318 - INFO - Chargement des EPCs depuis EPCS.xlsx
+2025-08-01 10:56:31,318 - ERROR - ❌ Erreur lors du chargement des EPCs: File not found: EPCS.xlsx
+2025-08-01 10:56:31,318 - ERROR - 💥 ÉCHEC DU PROCESSUS: File not found: EPCS.xlsx
+2025-08-01 10:56:31,318 - ERROR - Détails de l'erreur:
+Traceback (most recent call last):
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\MainController.py", line 307, in run_complete_process
+    self.load_input_epcs(input_file)
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\MainController.py", line 82, in load_input_epcs
+    self.original_epcs = self.epc_analyzer.load_epcs(file_path)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\EPC_OPT.py", line 15, in load_epcs
+    raise FileNotFoundError(f"File not found: {file_path}")
+FileNotFoundError: File not found: EPCS.xlsx
+
+2025-08-01 10:56:42,455 - INFO - MainController initialisé - SF:12, BW:125kHz, CR:4/5
+2025-08-01 10:56:42,455 - INFO - 🚀 DÉBUT DU PROCESSUS COMPLET
+2025-08-01 10:56:42,455 - INFO - Chargement des EPCs depuis EPCS.xlsx
+2025-08-01 10:56:42,455 - ERROR - ❌ Erreur lors du chargement des EPCs: File not found: EPCS.xlsx
+2025-08-01 10:56:42,455 - ERROR - 💥 ÉCHEC DU PROCESSUS: File not found: EPCS.xlsx
+2025-08-01 10:56:42,455 - ERROR - Détails de l'erreur:
+Traceback (most recent call last):
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\MainController.py", line 307, in run_complete_process
+    self.load_input_epcs(input_file)
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\MainController.py", line 82, in load_input_epcs
+    self.original_epcs = self.epc_analyzer.load_epcs(file_path)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\EPC_OPT.py", line 15, in load_epcs
+    raise FileNotFoundError(f"File not found: {file_path}")
+FileNotFoundError: File not found: EPCS.xlsx
+
+2025-08-01 11:15:56,948 - INFO - MainController initialisé - SF:12, BW:125kHz, CR:4/5
+2025-08-01 11:15:56,948 - INFO - 🚀 DÉBUT DU PROCESSUS COMPLET
+2025-08-01 11:15:56,949 - INFO - Chargement des EPCs depuis EPCS.xlsx
+2025-08-01 11:15:57,115 - INFO - ✅ 9 EPCs chargés avec succès
+2025-08-01 11:15:57,115 - INFO - Début de l'optimisation des EPCs
+2025-08-01 11:15:57,130 - INFO - ✅ Résultats optimisés sauvegardés dans EPCSOPT.xlsx
+2025-08-01 11:15:57,134 - INFO - 📊 Optimisation terminée:
+2025-08-01 11:15:57,134 - INFO -    • Groupes créés: 3
+2025-08-01 11:15:57,134 - INFO -    • Groupes compressés: 1
+2025-08-01 11:15:57,134 - INFO -    • Compression moyenne: 23.0%
+2025-08-01 11:15:57,134 - INFO - Initialisation du calculateur LoRaWAN
+2025-08-01 11:15:57,134 - ERROR - ❌ Erreur lors de l'initialisation du calculateur: Could not reconstruct 7 EPCs for prefix 'E2801160600002000000'
+2025-08-01 11:15:57,134 - ERROR - 💥 ÉCHEC DU PROCESSUS: Could not reconstruct 7 EPCs for prefix 'E2801160600002000000'
+2025-08-01 11:15:57,135 - ERROR - Détails de l'erreur:
+Traceback (most recent call last):
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\MainController.py", line 313, in run_complete_process
+    self.create_lorawan_calculator()
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\MainController.py", line 141, in create_lorawan_calculator
+    self.lorawan_calculator = EPCLoRaWANCalculator(
+                              ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\Encapsulation.py", line 43, in __init__
+    self.epc_list = self._reconstruct_epcs_from_df(epc_list, optimized_df)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\Encapsulation.py", line 84, in _reconstruct_epcs_from_df
+    raise ValueError(f"Could not reconstruct {suffix_count} EPCs for prefix '{prefix}'")
+ValueError: Could not reconstruct 7 EPCs for prefix 'E2801160600002000000'
+
+2025-08-01 11:43:32,142 - INFO - MainController initialisé - SF:12, BW:125kHz, CR:4/5
+2025-08-01 11:43:32,142 - INFO - 🚀 DÉBUT DU PROCESSUS COMPLET
+2025-08-01 11:43:32,143 - INFO - Chargement des EPCs depuis EPCS.xlsx
+2025-08-01 11:43:32,327 - INFO - ✅ 9 EPCs chargés avec succès
+2025-08-01 11:43:32,328 - INFO - Début de l'optimisation des EPCs
+2025-08-01 11:43:32,344 - INFO - ✅ Résultats optimisés sauvegardés dans EPCSOPT.xlsx
+2025-08-01 11:43:32,345 - INFO - 📊 Optimisation terminée:
+2025-08-01 11:43:32,346 - INFO -    • Groupes créés: 3
+2025-08-01 11:43:32,346 - INFO -    • Groupes compressés: 1
+2025-08-01 11:43:32,346 - INFO -    • Compression moyenne: 23.0%
+2025-08-01 11:43:32,346 - INFO - Initialisation du calculateur LoRaWAN
+2025-08-01 11:43:32,347 - ERROR - ❌ Erreur lors de l'initialisation du calculateur: Could not reconstruct 7 EPCs for prefix 'E2801160600002000000'
+2025-08-01 11:43:32,347 - ERROR - 💥 ÉCHEC DU PROCESSUS: Could not reconstruct 7 EPCs for prefix 'E2801160600002000000'
+2025-08-01 11:43:32,349 - ERROR - Détails de l'erreur:
+Traceback (most recent call last):
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\MainController.py", line 313, in run_complete_process
+    self.create_lorawan_calculator()
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\MainController.py", line 141, in create_lorawan_calculator
+    self.lorawan_calculator = EPCLoRaWANCalculator(
+                              ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\Encapsulation.py", line 43, in __init__
+    self.epc_list = self._reconstruct_epcs_from_df(epc_list, optimized_df)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HamzaELKHRISSI\OneDrive - Greenerwave\Desktop\System_code\Encapsulation.py", line 84, in _reconstruct_epcs_from_df
+    raise ValueError(f"Could not reconstruct {suffix_count} EPCs for prefix '{prefix}'")
+ValueError: Could not reconstruct 7 EPCs for prefix 'E2801160600002000000'
+
